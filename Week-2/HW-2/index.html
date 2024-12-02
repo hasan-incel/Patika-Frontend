@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Shakespeare Tribute</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>William Shakespeare</h1>
+</header>
+
+<nav>
+    <a href="javascript:void(0);" onclick="showSection('home')">Home</a>
+    <a href="javascript:void(0);" onclick="showSection('info')">Info</a>
+    <a href="javascript:void(0);" onclick="showSection('books')">Books</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome to the Tribute Website</h2>
+    <p>Explore the life and works of William Shakespeare.</p>
+    <img src="WS-1024x576.jpg" alt="William Shakespeare" width="300">
+    <p><i>"To be, or not to be, that is the question." - Hamlet</i></p>
+</section>
+
+<section id="info" class="hidden">
+    <h2>Biography</h2>
+    <p>William Shakespeare was born in 1564 in Stratford-upon-Avon, England. He is widely regarded as the greatest playwright of all time and is often called England's national poet. Shakespeare's works, including 39 plays, 154 sonnets, and numerous other poems, have had a profound influence on literature and the English language.</p>
+    <p>Shakespeare's early life remains somewhat mysterious, but it is believed that he attended grammar school in Stratford, where he would have studied Latin and classical literature. At the age of 18, he married Anne Hathaway, and they had three children together.</p>
+    <p>In the late 1580s, Shakespeare moved to London, where he became involved in the theater scene. He joined the Lord Chamberlain's Men, a renowned acting company, and quickly gained a reputation for his exceptional writing and acting skills. His plays were performed in major theaters, including the famous Globe Theatre.</p>
+    <p>Shakespeare's writing spans a range of genres, from tragic plays like <em>"Hamlet"</em>, <em>"Macbeth"</em>, and <em>"Othello"</em> to comedies such as <em>"A Midsummer Night's Dream"</em> and <em>"Twelfth Night"</em>. His historical plays, including <em>"Richard III"</em> and <em>"Henry V"</em>, explored the complexities of power, politics, and human nature.</p>
+    <p>His works often delve into themes such as love, betrayal, ambition, and the human condition, making them timeless and universally relatable. Shakespeare's remarkable ability to capture the essence of human emotions and social issues through vivid characters and intricate plots is a hallmark of his writing.</p>
+    <p>Shakespeare retired to Stratford around 1613, where he continued to live until his death in 1616. His legacy as a playwright, poet, and storyteller endures today, and his influence on literature, theater, and language is immeasurable.</p>
+</section>
+
+<section id="books" class="hidden">
+    <h2>Books</h2>
+    <ul>
+        <li>"Hamlet" (1600) - A tragedy about the young prince's quest for revenge against his uncle, who has murdered his father.</li>
+        <li>"Macbeth" (1606) - A tragedy that explores the destructive effects of ambition on the human soul as Macbeth seeks power at any cost.</li>
+        <li>"Romeo and Juliet" (1597) - A romantic tragedy about two young lovers from feuding families and the consequences of their doomed love.</li>
+        <li>"Othello" (1604) - A tragedy about a Moorish general in the Venetian army, manipulated by his envious subordinate, Iago.</li>
+        <li>"King Lear" (1605) - A tragedy that tells the story of an aging king who divides his kingdom among his daughters, leading to betrayal and madness.</li>
+        <li>"A Midsummer Night's Dream" (1595) - A comedy that explores love and magic in a mystical forest, where mortals and fairies collide.</li>
+        <li>"Twelfth Night" (1602) - A comedy about mistaken identities, love triangles, and the joy of disguise and deception.</li>
+        <li>"The Tempest" (1611) - A fantasy play that tells the story of a shipwrecked nobleman and his magical island, focusing on themes of forgiveness and reconciliation.</li>
+        <li>"Julius Caesar" (1599) - A historical tragedy that examines the political intrigue and moral dilemmas surrounding the assassination of Roman dictator Julius Caesar.</li>
+        <li>"The Merchant of Venice" (1596) - A comedy that deals with issues of justice, mercy, and revenge, featuring the famous character Shylock.</li>
+        <li>"Henry V" (1599) - A history play that dramatizes the reign of King Henry V and his military campaign in France, focusing on leadership and patriotism.</li>
+        <li>"Richard III" (1593) - A historical tragedy about the Machiavellian rise to power of Richard III and his brutal reign.</li>
+        <li>"Much Ado About Nothing" (1598) - A comedy that explores love, deception, and misunderstandings between two couples.</li>
+        <li>"Coriolanus" (1605) - A tragedy about the Roman general Coriolanus, who is banished from Rome and seeks revenge on the city he once served.</li>
+    </ul>
+</section>
+
+<footer>
+    <p>Page Made For Patika CSS Practice</p>
+</footer>
+
+<script>
+    // JavaScript function to toggle between sections
+    function showSection(sectionId) {
+        // Hide all sections by adding the 'hidden' class
+        var sections = document.querySelectorAll('section');
+        sections.forEach(function(section) {
+            section.classList.add('hidden');
+        });
+
+        // Show the selected section by removing the 'hidden' class
+        document.getElementById(sectionId).classList.remove('hidden');
+    }
+
+    // Initially show the home section
+    showSection('home');
+</script>
+
+</body>
+</html>
