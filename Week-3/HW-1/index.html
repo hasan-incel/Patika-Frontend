@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Sayfası</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Blog Sitesi</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Blog Gönderisi</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Blog Sitesine Hoşgeldiniz!</h1>
+      <p class="lead">
+        En son haberler, trendler ve ilginç konular hakkında yazılar
+        bulabileceğiniz blog site!
+      </p>
+    </div>
+
+    <!-- Blog Gönderileri -->
+    <main class="container">
+      <section>
+        <h2>Son Gönderiler</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="blog1.jpg"
+                class="card-img-top"
+                alt="Blog 1"
+                height="300px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blog Gönderisi 1</h5>
+                <p class="card-text">Blog gönderisi 1'in kısa özeti...</p>
+                <a href="post.html" class="btn btn-primary">Devamını oku</a>
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="blog2.jpg"
+                class="card-img-top"
+                alt="Blog 2"
+                height="300px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blog Gönderisi 2</h5>
+                <p class="card-text">Blog gönderisi 2'nin kısa özeti...</p>
+                <a href="post.html" class="btn btn-primary">Devamını oku</a>
+              </div>
+            </div>
+          </div>
+          <!-- Blog Card 3 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="blog3.jpg"
+                class="card-img-top"
+                alt="Blog 3"
+                height="300px"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Blog Gönderisi 3</h5>
+                <p class="card-text">Blog gönderisi 3'ün kısa özeti...</p>
+                <a href="post.html" class="btn btn-primary">Devamını oku</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 Blog Sitesi. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
