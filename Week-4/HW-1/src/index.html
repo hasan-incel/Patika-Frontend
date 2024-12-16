@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telecom Company</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 shadow-md">
+      <div class="max-w-7xl mx-auto px-6 py-3">
+        <div class="flex items-center justify-between">
+          <div class="text-white font-bold text-2xl">TelecomCo</div>
+          <div class="hidden md:flex space-x-6">
+            <a href="#features" class="text-white hover:text-yellow-300"
+              >Features</a
+            >
+            <a href="#pricing" class="text-white hover:text-yellow-300"
+              >Pricing</a
+            >
+            <a href="#contact" class="text-white hover:text-yellow-300"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden">
+            <button class="text-white">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-blue-600 text-white text-center py-20 relative">
+      <div>
+        <h1 class="text-4xl font-bold sm:text-5xl md:text-6xl">
+          Connect with the Best in Telecom
+        </h1>
+        <p class="mt-4 text-lg sm:text-xl">
+          High-speed internet, crystal clear calls, and reliable service. Join
+          TelecomCo today.
+        </p>
+        <div class="mt-8">
+          <a
+            href="#pricing"
+            class="bg-yellow-500 text-black py-2 px-6 rounded-lg text-lg hover:bg-yellow-400 transition"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white text-center">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-900">Why Choose TelecomCo?</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          We offer the best in connectivity, customer support, and
+          affordability.
+        </p>
+
+        <div
+          class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12"
+        >
+          <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+            <img
+              src="Internet.jpg"
+              alt="High-Speed Internet"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mt-4">
+              High-Speed Internet
+            </h3>
+            <p class="mt-4 text-gray-600">
+              Experience blazing-fast internet for streaming, gaming, and work
+              from home.
+            </p>
+          </div>
+
+          <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+            <img
+              src="Call.jpg"
+              alt="Crystal Clear Calls"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mt-4">
+              Crystal Clear Calls
+            </h3>
+            <p class="mt-4 text-gray-600">
+              Stay connected with clear, reliable calls every time, no matter
+              where you are.
+            </p>
+          </div>
+
+          <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+            <img
+              src="Support.jpg"
+              alt="24/7 Customer Support"
+              class="w-full h-48 object-cover rounded-md"
+            />
+            <h3 class="text-2xl font-semibold text-gray-800 mt-4">
+              24/7 Customer Support
+            </h3>
+            <p class="mt-4 text-gray-600">
+              Our dedicated support team is available round the clock to assist
+              you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-blue-100 text-center">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-gray-900">Choose Your Plan</h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Find the perfect plan for your needs. Simple, transparent pricing.
+        </p>
+
+        <div
+          class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12"
+        >
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-800">Basic Plan</h3>
+            <p class="mt-4 text-gray-600">
+              Perfect for light internet use and local calls.
+            </p>
+            <p class="mt-6 text-4xl font-bold text-blue-600">$29/month</p>
+            <button
+              class="mt-6 bg-yellow-500 text-black py-2 px-6 rounded-lg text-lg hover:bg-yellow-400 transition"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-800">Standard Plan</h3>
+            <p class="mt-4 text-gray-600">
+              Great for moderate usage, with enhanced call quality.
+            </p>
+            <p class="mt-6 text-4xl font-bold text-blue-600">$49/month</p>
+            <button
+              class="mt-6 bg-yellow-500 text-black py-2 px-6 rounded-lg text-lg hover:bg-yellow-400 transition"
+            >
+              Sign Up
+            </button>
+          </div>
+
+          <div class="bg-white p-8 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-800">Premium Plan</h3>
+            <p class="mt-4 text-gray-600">
+              For heavy users, with unlimited data and premium support.
+            </p>
+            <p class="mt-6 text-4xl font-bold text-blue-600">$79/month</p>
+            <button
+              class="mt-6 bg-yellow-500 text-black py-2 px-6 rounded-lg text-lg hover:bg-yellow-400 transition"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white py-6 text-center">
+      <p>&copy; 2024 TelecomCo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
