@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telecom Company Review Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-sans bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 text-white shadow-md">
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="text-2xl font-bold">TelecomCo</div>
+        <div class="space-x-6">
+          <a href="#home" class="hover:text-gray-300">Home</a>
+          <a href="#reviews" class="hover:text-gray-300">Reviews</a>
+          <a href="#contact" class="hover:text-gray-300">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="h-96 text-white flex items-center justify-center relative bg-[radial-gradient(ellipse_at_center,_#3b82f6_0%,_white_100%)]"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="relative z-10 text-center">
+        <h1 class="text-5xl font-semibold">Welcome to TelecomCo</h1>
+        <p class="mt-4 text-xl">
+          The best connectivity solutions for your needs
+        </p>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 bg-gray-100">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-semibold text-center text-blue-600">
+          Customer Reviews
+        </h2>
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-700">
+              "TelecomCo has been amazing! The connection speed is incredibly
+              fast and reliable."
+            </p>
+            <div class="mt-4 flex items-center">
+              <div
+                class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center"
+              >
+                A
+              </div>
+              <div class="ml-4">
+                <h4 class="font-semibold text-lg">Alice Johnson</h4>
+                <p class="text-gray-500">Business Owner</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-700">
+              "The customer service is outstanding. They are always available
+              and ready to help."
+            </p>
+            <div class="mt-4 flex items-center">
+              <div
+                class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center"
+              >
+                B
+              </div>
+              <div class="ml-4">
+                <h4 class="font-semibold text-lg">Bob Smith</h4>
+                <p class="text-gray-500">Freelancer</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <p class="text-gray-700">
+              "I switched to TelecomCo for better coverage, and I couldn't be
+              happier with the results."
+            </p>
+            <div class="mt-4 flex items-center">
+              <div
+                class="w-10 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center"
+              >
+                C
+              </div>
+              <div class="ml-4">
+                <h4 class="font-semibold text-lg">Carla Lee</h4>
+                <p class="text-gray-500">Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 bg-blue-600 text-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-4xl font-semibold text-center">Contact Us</h2>
+        <form
+          class="mt-8 max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-lg font-medium text-gray-700"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-lg font-medium text-gray-700"
+                >Your Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <label for="message" class="block text-lg font-medium text-gray-700"
+              >Your Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-blue-500 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <p>&copy; 2024 TelecomCo. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
