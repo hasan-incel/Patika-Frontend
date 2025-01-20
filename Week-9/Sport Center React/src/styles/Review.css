@@ -1,0 +1,118 @@
+.review-section {
+  background: #f0f9ff;
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 100px;
+}
+
+.review-box {
+  position: relative;
+  background-color: #355592;
+  color: white;
+  padding: 10px;
+  width: 45%;
+  text-align: left;
+  border-radius: 3px;
+
+  margin-right: 20px; /* Added gap between boxes */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for the 3D effect */
+}
+
+.review-box:last-child {
+  margin-right: 0; /* Removes right margin from the last box */
+}
+
+.review-image {
+  position: absolute;
+  top: -70px;
+  left: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.review-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-details {
+  position: absolute;
+  top: -60px;
+  left: 90px;
+  text-align: left;
+}
+
+.review-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.review-title {
+  font-size: 14px;
+  color: black;
+}
+
+.review-text {
+  margin-top: 15px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .reviews-container {
+    flex-direction: column; /* Stack the review boxes vertically */
+    align-items: center; /* Center the review boxes */
+    gap: 100px; /* Adds space between the boxes */
+  }
+
+  .review-box {
+    width: 90%; /* Make the review boxes take up most of the screen */
+    max-width: 500px; /* Prevent review boxes from growing too large */
+    margin-right: 0; /* Remove right margin for better alignment */
+    padding: 20px; /* Adds some extra padding for better spacing */
+  }
+
+  .review-image {
+    margin-bottom: 10px; /* Reduce margin for better spacing */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .review-details {
+    text-align: center; /* Center the text */
+  }
+
+  .review-name {
+    font-size: 16px; /* Slightly smaller name font */
+  }
+
+  .review-title {
+    font-size: 12px; /* Smaller title font */
+  }
+
+  .review-text {
+    font-size: 14px; /* Slightly smaller text for readability */
+    margin-top: 10px; /* Adjust top margin */
+  }
+}

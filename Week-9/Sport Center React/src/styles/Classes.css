@@ -1,0 +1,155 @@
+.classes-section {
+  background: linear-gradient(45deg, #ffffff 50%, #f0f0f0 50%);
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Title Styles */
+.section-title {
+  font-size: 2.5rem;
+  color: #355592;
+  font-weight: bold;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+/* Underline Styles */
+.underline {
+  width: 120px;
+  height: 8px;
+  background-color: orange;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
+.lorem-text {
+  font-size: 1.3rem; /* Same size as <p> under Yoga */
+  color: #555; /* Adjust the color to your preference, same as yoga text */
+  margin-bottom: 30px; /* Add some spacing below the lorem text */
+  max-width: 800px;
+  line-height: 1.6;
+  text-align: center; /* Center-align the lorem text */
+}
+
+/* Classes Boxes */
+.classes-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 90px;
+  margin-top: 40px;
+}
+
+.class-box {
+  background-color: #355592;
+  color: white;
+  padding: 8px 25px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  transition: all 0.3s;
+  position: relative;
+
+  /* Flexbox for vertical and horizontal centering */
+  display: flex;
+  align-items: center; /* Vertically centers the text */
+  justify-content: center; /* Horizontally centers the text */
+}
+
+.class-box:hover {
+  background-color: orange;
+}
+
+.class-box.active {
+  background-color: orange;
+  color: white;
+}
+
+.class-box.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid orange;
+}
+
+/* Class Details Section */
+.class-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  width: 90%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.class-text {
+  flex: 1;
+  padding-right: 20px;
+  display: none;
+  text-align: left;
+  color: #464343;
+}
+
+.class-text p {
+  font-size: 1.2rem;
+}
+
+.class-image img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.class-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.class-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.class-text p {
+  font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 576px) {
+  .classes-boxes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .class-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .class-image img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .class-text {
+    text-align: center;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,120 @@
+.contact-section {
+  background: white;
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.contact-info,
+.map-container {
+  width: 48%; /* Equal width for both sides */
+  text-align: left;
+  font-size: 1.3rem; /* Same size as <p> under Yoga */
+  color: #555;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: space-between; /* Ensures space between the two columns */
+  margin-bottom: 30px;
+}
+
+.mobile-info,
+.email-info {
+  font-size: 1.3rem;
+  color: #555;
+  width: 48%;
+}
+
+.contact-info p,
+.contact-info h2 {
+  margin-bottom: 10px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif; /* Ensuring the same font for inputs and textarea */
+  background-color: #f0f9ff;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+  width: 100%;
+}
+
+.appointment-form textarea {
+  height: 100px; /* 4 times the height of other boxes */
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  border: none;
+}
+
+@media (max-width: 576px) {
+  .contact-container {
+    flex-direction: column; /* Stack the contact info and map vertically */
+    align-items: center; /* Center the items */
+  }
+
+  /* Both the contact-info and map-container will take up full width */
+  .contact-info,
+  .map-container {
+    width: 90%; /* Allow more space for smaller screens */
+    max-width: 500px; /* Prevent the elements from becoming too wide */
+  }
+
+  /* Adjust the font size for readability */
+  .contact-info,
+  .map-container,
+  .appointment-form input,
+  .appointment-form textarea {
+    font-size: 1.1rem; /* Slightly smaller text size for small screens */
+  }
+
+  .contact-row {
+    flex-direction: column; /* Stack the mobile and email info vertically */
+    align-items: flex-start; /* Align the text to the left */
+  }
+
+  .mobile-info,
+  .email-info {
+    width: 100%; /* Ensure the contact details take up full width */
+    margin-bottom: 15px; /* Adds space between each contact info */
+  }
+
+  /* Adjust the form elements to fit better */
+  .appointment-form input,
+  .appointment-form textarea {
+    padding: 12px; /* Increase padding for better usability */
+  }
+
+  .map-container iframe {
+    height: 300px; /* Reduce map height for small screens */
+  }
+}

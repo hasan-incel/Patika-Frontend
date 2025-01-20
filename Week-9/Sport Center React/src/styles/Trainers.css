@@ -1,0 +1,187 @@
+.trainers-section {
+  background: #f0f9ff;
+  padding: 50px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.trainers-images {
+  display: flex;
+  justify-content: space-around; /* Evenly space the images */
+  gap: 70px; /* Space between images */
+}
+
+.trainer-image {
+  position: relative;
+  width: 350px;
+  height: auto;
+  border-radius: 8px; /* Optional: round corners of images */
+  margin-top: 50px;
+  border: 3px solid orange;
+}
+
+.trainer-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  border-radius: 5px; /* Optional: if you want rounded corners on the image */
+}
+
+/* Top and Bottom lines */
+.trainer-image::before,
+.trainer-image::after {
+  content: "";
+  position: absolute;
+  background-color: #355592;
+  z-index: 1;
+  height: 8px; /* Initial height of the line */
+  width: 100px; /* Initial width of the line */
+  transition: width 0.3s ease; /* Smooth transition for width change */
+}
+
+/* Top line */
+.trainer-image::before {
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%); /* Centers it horizontally */
+  width: 100px; /* Initial width */
+}
+
+/* Bottom line */
+.trainer-image::after {
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%); /* Centers it horizontally */
+  width: 100px; /* Initial width */
+}
+
+/* Hover Effect for Top Line */
+.trainer-image:hover::before {
+  width: 200px; /* Double the original width */
+}
+
+/* Hover Effect for Bottom Line */
+.trainer-image:hover::after {
+  width: 200px; /* Double the original width */
+}
+
+.trainer-image .left-line,
+.trainer-image .right-line {
+  position: absolute;
+  background-color: #355592;
+  z-index: 1;
+  width: 8px;
+  height: 100px; /* Initial height */
+  transition: height 0.3s ease; /* Smooth transition for height change */
+}
+
+.trainer-image .left-line {
+  top: 50%;
+  left: -8px;
+  transform: translateY(-50%); /* Centers it vertically */
+}
+
+.trainer-image .right-line {
+  top: 50%;
+  right: -8px;
+  transform: translateY(-50%); /* Centers it vertically */
+}
+
+/* Hover Effect: Grow vertically without changing position */
+.trainer-image:hover .left-line {
+  height: 200px; /* Double the original height */
+}
+
+.trainer-image:hover .right-line {
+  height: 200px; /* Double the original height */
+}
+
+/* The clip-path box below the image on hover */
+.trainer-image:hover .trainer-info {
+  visibility: visible;
+  bottom: 0;
+  margin-bottom: 20px;
+  transition: bottom 0.3s ease;
+}
+
+.trainer-info {
+  position: absolute;
+  left: 10px; /* Added left margin to prevent touching the left edge */
+  width: calc(
+    100% - 20px
+  ); /* Reduced width by 10px to account for left and right padding */
+  bottom: -40px;
+  background-color: #355592;
+  clip-path: polygon(
+    0% 15%,
+    15% 15%,
+    15% 0%,
+    85% 0%,
+    85% 15%,
+    100% 15%,
+    100% 85%,
+    85% 85%,
+    85% 100%,
+    15% 100%,
+    15% 85%,
+    0% 85%
+  );
+  visibility: hidden; /* Hidden by default */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.name,
+.role {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 15px;
+}
+
+@media (max-width: 576px) {
+  .trainers-images {
+    flex-direction: column; /* Stack the images vertically */
+    align-items: center; /* Center the images */
+    gap: 30px; /* Reduce space between images */
+  }
+
+  .trainer-image {
+    width: 90%; /* Make images more flexible */
+    max-width: 400px; /* Prevent images from growing too large */
+    margin-top: 20px; /* Space between images */
+  }
+
+  .trainer-info {
+    width: calc(100% - 20px); /* Ensure the info box doesn't touch edges */
+    bottom: -40px;
+  }
+
+  .trainer-image::before,
+  .trainer-image::after {
+    width: 80px; /* Make the top and bottom lines smaller */
+  }
+
+  .trainer-image .left-line,
+  .trainer-image .right-line {
+    height: 80px; /* Shorten the vertical lines */
+  }
+}

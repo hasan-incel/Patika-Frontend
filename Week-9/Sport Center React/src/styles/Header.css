@@ -1,0 +1,268 @@
+.hero-background {
+  background-image: url("/assets/Pictures/hero-man.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  margin-top: -100px;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Section Styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: transparent; /* Initially transparent */
+  z-index: 100;
+  padding: 5px 0;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.navbar.scrolled {
+  background-color: #355592; /* Blue background when scrolled */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10; /* Keeps the navbar on top of other elements */
+  transition: background-color 0.3s, top 0.3s; /* Smooth transition */
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between; /* Creates space between logo and nav links */
+  align-items: center; /* Ensures vertical alignment */
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 80px;
+  margin-right: 20px; /* Space between logo and navigation */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 180px;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #bbb;
+}
+
+/* Join Us Button Styles */
+.join-us-btn {
+  background-color: orange; /* Set the background to orange */
+  color: white; /* Set the text color to white */
+  padding: 5px 5px; /* Adjust padding for the button */
+  font-size: 1rem; /* Adjust font size */
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  display: inline-flex; /* Align it like other navbar items */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.join-us-btn:hover {
+  background-color: darkorange; /* Darker shade of orange on hover */
+}
+
+/* Hero Heading Styles */
+.hero-heading {
+  font-size: 6.5rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-align: left; /* Align text to the left */
+  margin-left: 0; /* Ensure no extra margin is applied */
+}
+
+.powerfull-text {
+  background-color: #355592; /* Blue background */
+  color: white;
+  padding: 10px 30px; /* Padding to make it button-like */
+  font-size: 1.5rem; /* Font size */
+  font-weight: bold;
+  border-radius: 8px; /* Rounded corners */
+  display: inline-block; /* Keeps the button inline */
+  margin-bottom: 20px; /* Space between the "POWERFUL" text and the main heading */
+  text-align: center; /* Center the text horizontally */
+}
+
+/* Hero Paragraph Styles */
+.hero-paragraph {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 2rem;
+  padding: 15px;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0%;
+}
+
+/* Button Container Styles */
+.button-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 50px;
+  justify-content: flex-start;
+}
+
+/* Get Started Button Styles */
+.sign-up-btn {
+  background-color: #355592;
+  color: white;
+  padding: 10px 30px; /* Smaller padding */
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  display: inline-flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontally center the text */
+  align-items: center; /* Vertically center the text */
+  text-align: center; /* Ensure text is centered */
+  margin-left: 30px;
+}
+
+.get-started-btn:hover {
+  background-color: #2c5282;
+}
+
+/* Learn More Button Styles */
+.details-btn {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  border: 2px solid white;
+}
+
+.learn-more-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Navbar pop-up and hamburger button styles */
+/* Navbar pop-up and hamburger button styles */
+@media (max-width: 576px) {
+  /* Hide the regular navbar links initially */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    top: 60px; /* Adjust this based on your navbar height */
+    left: 0;
+    right: 0;
+    background-color: #355592;
+    padding: 5px 0; /* Adjusted padding to shrink the box size */
+    z-index: 1;
+    width: 33.33%; /* Make the box 1/3 of the screen width */
+    left: 20px; /* Position the box centrally */
+    border-radius: 15px;
+  }
+
+  .nav-links a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px; /* Make sure the link text fits well */
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover {
+    color: #bbb;
+  }
+
+  /* Hamburger menu icon */
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    z-index: 1000;
+  }
+
+  .hamburger-bar {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  /* Position the hamburger button on the right side */
+  .nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hamburger-menu {
+    margin-left: auto;
+  }
+
+  /* Show the navbar links when the menu is active */
+  .nav-links.active {
+    display: flex;
+    /* Ensure the box expands only as needed */
+    width: 33.33%; /* Ensure the width is 1/3 of the screen width */
+    left: 33.33%; /* Keep the box centered */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  /* Adjust the logo size */
+  .logo img {
+    max-height: 60px;
+    margin-bottom: 15px;
+  }
+
+  /* Make the navbar sticky when scrolling */
+  .navbar.scrolled {
+    background-color: #355592;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+}

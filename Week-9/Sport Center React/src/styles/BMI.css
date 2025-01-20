@@ -1,0 +1,114 @@
+.bmi-section {
+  display: flex;
+  max-width: 1200px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 45px;
+  height: auto; /* Let the content determine height */
+}
+
+.left-side {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #355592;
+}
+
+.description {
+  font-size: 1.2rem; /* Increased size */
+  margin-bottom: 20px;
+  color: #464343;
+}
+
+.input-container {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-right: 50px;
+}
+
+input {
+  padding: 8px;
+  margin-right: 10px;
+  width: 140px; /* Smaller box size */
+  border: 2px solid #464343; /* Thicker border with new color */
+  border-radius: 5px; /* Rounded corners */
+  color: #464343; /* Text color inside the input box */
+  font-weight: bold; /* Make the text bolder */
+}
+
+span {
+  font-size: 16px;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Center content vertically */
+  position: relative;
+}
+
+.bmi-text {
+  font-size: 24px;
+  position: absolute;
+  top: -30px; /* Place it above the image */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.bmi-chart-container {
+  position: relative;
+  margin-top: 30px; /* Adds some space below the text */
+}
+
+.bmi-image {
+  width: 100%;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid orange; /* Triangle pointing upwards */
+  bottom: -20px; /* Position the triangle at the bottom of the image */
+  left: 0;
+  transition: left 0.2s ease-in-out;
+}
+
+@media (max-width: 576px) {
+  .bmi-section {
+    flex-direction: column; /* Stack left and right side vertically */
+  }
+
+  .right-side {
+    height: 50vh; /* Ensure it takes half the screen height */
+    justify-content: flex-start; /* Align text at the top */
+  }
+
+  .bmi-chart-container {
+    display: flex;
+    flex-direction: column; /* Stack image and triangle vertically */
+    justify-content: flex-end; /* Push the image to the bottom */
+    height: 100%; /* Ensure the height stretches to the bottom */
+  }
+
+  .bmi-image {
+    width: 100%; /* Keep the image full width */
+  }
+
+  .triangle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Center the triangle */
+  }
+}

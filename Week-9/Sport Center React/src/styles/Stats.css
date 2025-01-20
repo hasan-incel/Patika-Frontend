@@ -1,0 +1,60 @@
+/* Section Styles */
+.stats-section {
+  background-color: #f0f9ff; /* Whitish blue background */
+  padding: 50px 20px;
+  text-align: center; /* Center-align the text in each box */
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Space between the flex items */
+  gap: 20px; /* Adds space between the boxes */
+}
+
+/* Box Styles */
+.stats-box {
+  background-color: #ffffff; /* White background for each box */
+  padding: 6px 9px; /* Smaller padding for better fit */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+  width: 22%; /* Adjust width to fit all four boxes in one row */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Ensure text inside is centered */
+}
+
+/* Number Text Styles */
+.stats-number {
+  font-size: 2.5rem; /* Slightly smaller font size */
+  font-weight: bold;
+  color: #355592; /* Blue color for the numbers */
+  margin-bottom: 5px;
+}
+
+/* Text Below Number Styles */
+.stats-text {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black; /* Grey color for the text */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack the boxes vertically */
+    align-items: center; /* Center-align the boxes */
+  }
+
+  .stats-box {
+    width: 100%; /* Full width on small screens */
+    margin-bottom: 20px; /* Add space between the boxes */
+  }
+}
