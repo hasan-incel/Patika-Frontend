@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Dice Game</h1>
+
+      <div>
+        <label for="username">Player 1 Username: </label>
+        <input type="text" id="username" placeholder="Enter your username" />
+      </div>
+
+      <div class="players">
+        <div class="player">
+          <h2 id="player1-name">Player 1</h2>
+          <div id="player1-dice" class="dice"></div>
+        </div>
+        <div class="player">
+          <h2 id="player2-name">Player 2 (PC)</h2>
+          <div id="player2-dice" class="dice"></div>
+        </div>
+      </div>
+
+      <div id="result"></div>
+
+      <button id="rollButton">Roll Dice</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
